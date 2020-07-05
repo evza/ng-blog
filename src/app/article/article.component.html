@@ -1,0 +1,11 @@
+<h5>{{ article.key }}</h5>
+<div>
+    <img [src]="article.imageUrl">
+    <h2>{{ article.title }}</h2>
+    <div>
+        {{ article.date.toLocaleString() }}
+    </div>
+    <p style="text-align: justify; text-indent: 30px;">
+        {{ article.content }}
+    </p>
+</div>

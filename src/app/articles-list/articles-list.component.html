@@ -1,0 +1,13 @@
+<h2>Главная</h2>
+<div *ngFor="let article of articles">
+    <div class="card">
+        <div class="card-body">
+            <div><img [src]="article.imageUrl"></div> <!--привязка в теге к src и свойству класса -->
+            <div><h3>{{ article.title }}</h3> <!-- привязка в узелю текст в -->
+            </div><div class="info">{{ article.date.toLocaleString() }}</div>
+            <p>{{ article.descrition }}</p>
+            <a routerLink="/{{ article.key }}" class="continue">Continue reading</a>
+            <div style="clear: left;"></div>
+        </div>
+    </div>
+</div>
